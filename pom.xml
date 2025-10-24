@@ -8,6 +8,27 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <exec.mainClass>com.mycompany.sistemadeautoatendimentodecinema.SistemaDeAutoAtendimentoDeCinema</exec.mainClass>
+        <exec.mainClass>com.mycompany.sistemadeautoatendimentodecinema.SistemaDeAutoAtendimentoDeCinema</exec.mainClass> 
     </properties>
+    <dependencies>
+        <dependency>
+    <groupId>com.formdev</groupId>
+    <artifactId>flatlaf</artifactId>
+    <version>3.6.2</version>
+        </dependency>
+            <dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.0.33</version>
+</dependency>
+    </dependencies>
+ <build>
+     <resources>
+         <resource>
+             <directory>
+                 com/mycompany/sistemadeautoatendimentodecinema/fotos
+             </directory>
+             </resource>
+     </resources>
+ </build>
 </project>

@@ -10,13 +10,13 @@ import javax.swing.ImageIcon;
  *
  * @author Aluno
  */
-public class EscolhaHorarioTron extends javax.swing.JFrame {
+public class EscolhaHorario extends javax.swing.JFrame {
     private String horas;
     
     /**
      * Creates new form EscolhaHorario
      */
-    public EscolhaHorarioTron() {
+    public EscolhaHorario() {
         initComponents();
         carregarImagem();
         
@@ -45,7 +45,6 @@ public class EscolhaHorarioTron extends javax.swing.JFrame {
         jBH9 = new javax.swing.JButton();
         jBH8 = new javax.swing.JButton();
         jBH7 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -161,9 +160,7 @@ public class EscolhaHorarioTron extends javax.swing.JFrame {
                             .addComponent(jBH2)
                             .addGap(30, 30, 30)
                             .addComponent(jBH3))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42))
+                .addGap(40, 306, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(266, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -176,29 +173,26 @@ public class EscolhaHorarioTron extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(33, 33, 33)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBH1)
-                            .addComponent(jBH2)
-                            .addComponent(jBH3))
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel3)
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBH4)
-                            .addComponent(jBH5)
-                            .addComponent(jBH6))
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel4)
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBH7)
-                            .addComponent(jBH8)
-                            .addComponent(jBH9)))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBH1)
+                    .addComponent(jBH2)
+                    .addComponent(jBH3))
+                .addGap(39, 39, 39)
+                .addComponent(jLabel3)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBH4)
+                    .addComponent(jBH5)
+                    .addComponent(jBH6))
+                .addGap(29, 29, 29)
+                .addComponent(jLabel4)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBH7)
+                    .addComponent(jBH8)
+                    .addComponent(jBH9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addComponent(jB1)
                 .addGap(53, 53, 53))
         );
@@ -221,7 +215,7 @@ public class EscolhaHorarioTron extends javax.swing.JFrame {
         
         
         
-        PoltronasTronH1 frame = new PoltronasTronH1();
+        Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -229,7 +223,7 @@ public class EscolhaHorarioTron extends javax.swing.JFrame {
     }//GEN-LAST:event_jBH1ActionPerformed
 
     private void jBH2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH2ActionPerformed
-PoltronasTronH2 frame = new PoltronasTronH2();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -237,7 +231,7 @@ PoltronasTronH2 frame = new PoltronasTronH2();
     }//GEN-LAST:event_jBH2ActionPerformed
 
     private void jBH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH3ActionPerformed
-PoltronasTronH3 frame = new PoltronasTronH3();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -245,7 +239,7 @@ PoltronasTronH3 frame = new PoltronasTronH3();
     }//GEN-LAST:event_jBH3ActionPerformed
 
     private void jBH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH4ActionPerformed
-      PoltronasTronA1 frame = new PoltronasTronA1();
+      Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -253,7 +247,7 @@ PoltronasTronH3 frame = new PoltronasTronH3();
     }//GEN-LAST:event_jBH4ActionPerformed
 
     private void jBH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH5ActionPerformed
-PoltronasTronA2 frame = new PoltronasTronA2();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -261,7 +255,7 @@ PoltronasTronA2 frame = new PoltronasTronA2();
     }//GEN-LAST:event_jBH5ActionPerformed
 
     private void jBH6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH6ActionPerformed
-PoltronasTronA3 frame = new PoltronasTronA3();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -269,7 +263,7 @@ PoltronasTronA3 frame = new PoltronasTronA3();
     }//GEN-LAST:event_jBH6ActionPerformed
 
     private void jBH7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH7ActionPerformed
-PoltronasTronDA1 frame = new PoltronasTronDA1();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -277,7 +271,7 @@ PoltronasTronDA1 frame = new PoltronasTronDA1();
     }//GEN-LAST:event_jBH7ActionPerformed
 
     private void jBH8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH8ActionPerformed
-PoltronasTronDA2 frame = new PoltronasTronDA2();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -285,7 +279,7 @@ PoltronasTronDA2 frame = new PoltronasTronDA2();
     }//GEN-LAST:event_jBH8ActionPerformed
 
     private void jBH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH9ActionPerformed
-PoltronasTronDA3 frame = new PoltronasTronDA3();
+Poltronas frame = new Poltronas();
         
         frame.setVisible(true);
         this.dispose();
@@ -309,14 +303,22 @@ PoltronasTronDA3 frame = new PoltronasTronDA3();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EscolhaHorarioTron.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EscolhaHorario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EscolhaHorarioTron.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EscolhaHorario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EscolhaHorarioTron.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EscolhaHorario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EscolhaHorarioTron.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EscolhaHorario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -329,7 +331,7 @@ PoltronasTronDA3 frame = new PoltronasTronDA3();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EscolhaHorarioTron().setVisible(true);
+                new EscolhaHorario().setVisible(true);
             }
         });
     }
@@ -349,12 +351,10 @@ PoltronasTronDA3 frame = new PoltronasTronDA3();
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 
 private void carregarImagem() {
-        ImageIcon tron = new ImageIcon(ClassLoader.getSystemResource("imagem/tonLeg.jpg"));
-        jLabel5.setIcon(tron);
+       
     }
 
     public String getHoras() {

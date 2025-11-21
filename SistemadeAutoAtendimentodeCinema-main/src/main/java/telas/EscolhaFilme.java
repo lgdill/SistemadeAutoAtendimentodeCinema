@@ -132,7 +132,7 @@ public class EscolhaFilme extends javax.swing.JFrame {
 
     private void jB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB2ActionPerformed
 
-        EscolhaHorarioInv principalFrame = new EscolhaHorarioInv();
+        EscolhaHorario principalFrame = new EscolhaHorario();
         principalFrame.setVisible(true);
         this.dispose();
 
@@ -141,7 +141,7 @@ public class EscolhaFilme extends javax.swing.JFrame {
 
     private void jB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB1ActionPerformed
 
-        EscolhaHorarioInv frame = new EscolhaHorarioInv();
+        EscolhaHorario frame = new EscolhaHorario();
         frame.setVisible(true);
         this.dispose();
 

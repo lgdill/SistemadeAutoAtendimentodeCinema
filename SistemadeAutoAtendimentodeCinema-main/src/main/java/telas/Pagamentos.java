@@ -1,9 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package telas;
 
+
+import database.PedidoDAO;
 import java.util.ArrayList;
 /**
  *
@@ -102,7 +101,11 @@ public class Pagamentos extends javax.swing.JFrame {
     private void CreditoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreditoActionPerformed
         metodoPagamento = "Crédito";
         System.out.println("Método de pagamento selecionado: " + metodoPagamento);
-
+        
+        
+        PedidoDAO dao = new PedidoDAO();
+        dao.salvarPedido(filme, horario, String.join(", ", poltronas), dia, metodoPagamento);
+        
         VCPagou frame = new VCPagou(metodoPagamento);
         frame.setVisible(true);
         this.dispose();
@@ -112,6 +115,8 @@ public class Pagamentos extends javax.swing.JFrame {
         metodoPagamento = "Débito";
         System.out.println("Método de pagamento selecionado: " + metodoPagamento);
         
+        PedidoDAO dao = new PedidoDAO();
+        dao.salvarPedido(filme, horario, String.join(", ", poltronas), dia, metodoPagamento);
         VCPagou frame = new VCPagou(metodoPagamento);
         
         frame.setVisible(true);

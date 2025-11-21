@@ -1,6 +1,7 @@
 
 package database;
 
+import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,7 +10,7 @@ public class ConnectionFactory {
     private static Connection conexao = null;
     
     private static Connection getInstance() throws SQLException{
-        String db = "cinema";
+        String db = "cinema3";
         String url = "jdbc:mysql://localhost:3306/" + db; //Nome da base de dados
         String user = "root"; //nome do usuário do MySQL
         String password = ""; //senha do MySQL

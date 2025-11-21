@@ -1,5 +1,6 @@
 package telas;
 
+
 import com.formdev.flatlaf.FlatDarkLaf;
 import javax.swing.ImageIcon;
 
@@ -8,6 +9,9 @@ import javax.swing.ImageIcon;
  * @author Aluno
  */
 public class EscolhaFilme extends javax.swing.JFrame {
+    
+    
+    private String filmeEscolhido;
 
     /**
      * Creates new form NewJFrame
@@ -131,19 +135,19 @@ public class EscolhaFilme extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB2ActionPerformed
-
-        EscolhaHorario principalFrame = new EscolhaHorario();
-        principalFrame.setVisible(true);
-        this.dispose();
+       EscolhaHorario frame = new EscolhaHorario("Invocação do Mal: O Último Ritual");
+       frame.setVisible(true);
+       this.dispose();
 
 
     }//GEN-LAST:event_jB2ActionPerformed
 
     private void jB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB1ActionPerformed
-
-        EscolhaHorario frame = new EscolhaHorario();
+        
+        EscolhaHorario frame = new EscolhaHorario("Tron Legacy");
         frame.setVisible(true);
         this.dispose();
+
 
 
     }//GEN-LAST:event_jB1ActionPerformed
@@ -207,6 +211,6 @@ public class EscolhaFilme extends javax.swing.JFrame {
         ImageIcon tron = new ImageIcon(ClassLoader.getSystemResource("imagem/tonLeg.jpg"));
         jB1.setIcon(tron);
     }       
-}
 
+}
 

@@ -4,19 +4,40 @@
  */
 package telas;
 
+import java.util.ArrayList;
 /**
  *
  * @author Aluno
  */
 public class Pagamentos extends javax.swing.JFrame {
+        private String filme;
+        private String horario;
+        private String dia;
+        private String metodoPagamento;
+        private ArrayList<String> poltronas;
 
     /**
      * Creates new form Tela_5
      */
-    public Pagamentos() {
+    public Pagamentos(String filme, String horario, ArrayList<String> poltronasSelecionadas, String dia) {
         initComponents();
+        this.filme = filme;
+        this.horario = horario;
+        this.poltronas = poltronasSelecionadas;
+        this.dia = dia;
+        
+        
+        System.out.println("Horário: " + horario);
+        System.out.println("Poltronas: " + String.join(", ",  poltronas));
+        System.out.println("Dia: " + dia);
+        
     }
 
+    private Pagamentos() {
+    initComponents();
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -79,11 +100,19 @@ public class Pagamentos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CreditoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreditoActionPerformed
-        // TODO add your handling code here:
+        metodoPagamento = "Crédito";
+        System.out.println("Método de pagamento selecionado: " + metodoPagamento);
+
+        VCPagou frame = new VCPagou(metodoPagamento);
+        frame.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_CreditoActionPerformed
 
     private void DebitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DebitoActionPerformed
-        VCPagou frame = new VCPagou();
+        metodoPagamento = "Débito";
+        System.out.println("Método de pagamento selecionado: " + metodoPagamento);
+        
+        VCPagou frame = new VCPagou(metodoPagamento);
         
         frame.setVisible(true);
         this.dispose();   

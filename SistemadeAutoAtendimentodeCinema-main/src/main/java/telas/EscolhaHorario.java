@@ -11,14 +11,28 @@ import javax.swing.ImageIcon;
  * @author Aluno
  */
 public class EscolhaHorario extends javax.swing.JFrame {
+    
+    private String filmeSelecionado;
     private String horas;
+    private String diaa;
+    private String metodoSelecionado;
     
     /**
      * Creates new form EscolhaHorario
      */
+    
+    
     public EscolhaHorario() {
         initComponents();
+        
+    }
+
+    public EscolhaHorario(String filmeEscolhido) {
+        initComponents();
         carregarImagem();
+        
+        this.filmeSelecionado = filmeEscolhido;   // ✔ AGORA FUNCIONA
+        System.out.println("Filme recebido: " + filmeSelecionado);
         
     }
 
@@ -203,9 +217,9 @@ public class EscolhaHorario extends javax.swing.JFrame {
     private void jB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB1ActionPerformed
         // TODO add your handling code here:
         
-        EscolhaFilme frame = new EscolhaFilme();
+        EscolhaFilme maca = new EscolhaFilme();
         
-        frame.setVisible(true);
+        maca.setVisible(true);
         this.dispose();
         
     }//GEN-LAST:event_jB1ActionPerformed
@@ -215,72 +229,89 @@ public class EscolhaHorario extends javax.swing.JFrame {
         
         
         
-        Poltronas frame = new Poltronas();
-        
+        horas = "14:30";
+        diaa = "hoje";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         
     }//GEN-LAST:event_jBH1ActionPerformed
 
     private void jBH2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH2ActionPerformed
-Poltronas frame = new Poltronas();
-        
+
+        horas = "15:45";
+        diaa = "hoje";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jBH2ActionPerformed
 
     private void jBH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH3ActionPerformed
-Poltronas frame = new Poltronas();
         
+        horas = "17:30";
+        diaa = "hoje";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jBH3ActionPerformed
 
     private void jBH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH4ActionPerformed
-      Poltronas frame = new Poltronas();
         
+        horas = "14:30";
+        diaa = "amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
   // TODO add your handling code here:
     }//GEN-LAST:event_jBH4ActionPerformed
 
     private void jBH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH5ActionPerformed
-Poltronas frame = new Poltronas();
-        
+    
+        horas = "15:45";
+        diaa = "amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jBH5ActionPerformed
 
     private void jBH6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH6ActionPerformed
-Poltronas frame = new Poltronas();
         
+        horas = "17:30";
+        diaa = "amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jBH6ActionPerformed
 
     private void jBH7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH7ActionPerformed
-Poltronas frame = new Poltronas();
         
+        horas = "14:30";
+        diaa = "depois de amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jBH7ActionPerformed
 
     private void jBH8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH8ActionPerformed
-Poltronas frame = new Poltronas();
         
+        horas = "15:45";
+        diaa = "depois de amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jBH8ActionPerformed
 
     private void jBH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBH9ActionPerformed
-Poltronas frame = new Poltronas();
         
+        horas = "17:30";
+        diaa = "depois de amanhã";
+        Poltronas frame = new Poltronas(filmeSelecionado, horas, diaa, metodoSelecionado);
         frame.setVisible(true);
         this.dispose();
         // TODO add your handling code here:

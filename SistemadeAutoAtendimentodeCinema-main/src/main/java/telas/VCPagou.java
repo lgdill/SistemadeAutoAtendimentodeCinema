@@ -9,14 +9,24 @@ package telas;
  * @author Marcos
  */
 public class VCPagou extends javax.swing.JFrame {
+    private String metodoPagamento;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VCPagou.class.getName());
 
     /**
      * Creates new form VCPagou
      */
+    
     public VCPagou() {
+         initComponents();
+    }
+
+    public VCPagou(String metodoPagamento) {
         initComponents();
+        this.metodoPagamento = metodoPagamento; // SALVA o valor recebido
+        initComponents();
+
+        
     }
 
     /**

@@ -4,20 +4,100 @@
  */
 package telas;
 
+import java.util.ArrayList;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+
 /**
- *
- * @author Aluno
+ * Classe para escolha de poltronas.
  */
 public class Poltronas extends javax.swing.JFrame {
 
+    private String filmeSelecionado;
+    private String horarioSelecionado;
+    private ArrayList<JCheckBox> listaPoltronas = new ArrayList<>();
+    private String diaSelecionado;
+    private String metodoSelecionado;
+    
     /**
-     * Creates new form Tela_2
+     * Construtor com filme e horário.
+     */
+    public Poltronas(String filme, String horario, String dia, String metodoPagamento) {
+        initComponents();
+        this.filmeSelecionado = filme;
+        this.horarioSelecionado = horario;
+        this.diaSelecionado = dia;
+        this.metodoSelecionado = metodoPagamento;
+        adicionarPoltronasNaLista();
+    }
+
+    /**
+     * Construtor padrão.
      */
     public Poltronas() {
         initComponents();
-        
-            }
+        adicionarPoltronasNaLista();
+    }
 
+    /**
+     * Adiciona todas as JCheckBox de poltronas à lista.
+     */
+    private void adicionarPoltronasNaLista() {
+        // Linha 1
+        listaPoltronas.add(jC11);
+        listaPoltronas.add(jC12);
+        listaPoltronas.add(jC13);
+        listaPoltronas.add(jC14);
+        listaPoltronas.add(jC15);
+        listaPoltronas.add(jC16);
+
+        // Linha 2
+        listaPoltronas.add(jC21);
+        listaPoltronas.add(jC22);
+        listaPoltronas.add(jC23);
+        listaPoltronas.add(jC24);
+        listaPoltronas.add(jC25);
+        listaPoltronas.add(jC26);
+
+        // Linha 3
+        listaPoltronas.add(jC31);
+        listaPoltronas.add(jC32);
+        listaPoltronas.add(jC33);
+        listaPoltronas.add(jC34);
+        listaPoltronas.add(jC35);
+        listaPoltronas.add(jC36);
+
+        // Linha 4
+        listaPoltronas.add(jC41);
+        listaPoltronas.add(jC42);
+        listaPoltronas.add(jC43);
+        listaPoltronas.add(jC44);
+        listaPoltronas.add(jC45);
+        listaPoltronas.add(jC46);
+
+        // Linha 5
+        listaPoltronas.add(jC51);
+        listaPoltronas.add(jC52);
+        listaPoltronas.add(jC53);
+        listaPoltronas.add(jC54);
+        listaPoltronas.add(jC55);
+        listaPoltronas.add(jC56);
+
+        // Linha 6
+        listaPoltronas.add(jC61);
+        listaPoltronas.add(jC62);
+        listaPoltronas.add(jC63);
+        listaPoltronas.add(jC64);
+        listaPoltronas.add(jC65);
+        listaPoltronas.add(jC66);
+    }
+
+    /**
+     * Retorna uma lista com todas as poltronas selecionadas.
+     */
+    
+       
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -409,10 +489,20 @@ public class Poltronas extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     
-    Pagamentos frame = new Pagamentos();
-        
-        frame.setVisible(true);
-        this.dispose();   
+     ArrayList<String> poltronas = getPoltronasSelecionadas();
+
+    if (poltronas.isEmpty()) {
+        JOptionPane.showMessageDialog(this,
+                "Por favor selecione pelo menos uma poltrona.",
+                "Atenção",
+                JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+
+    Pagamentos frame = new Pagamentos(filmeSelecionado, horarioSelecionado, poltronas, diaSelecionado);
+    frame.setVisible(true);
+    this.dispose();  
+  
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -692,7 +782,7 @@ public class Poltronas extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
+        //</editor-fold>a
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -768,55 +858,52 @@ public class Poltronas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-    public String getPoltronaSelecionada() {
-
-    // Linha 1
-    if (jC11.isSelected()) return "A1";
-    if (jC12.isSelected()) return "A2";
-    if (jC13.isSelected()) return "A3";
-    if (jC14.isSelected()) return "A4";
-    if (jC15.isSelected()) return "A5";
-    if (jC16.isSelected()) return "A6";
-
-    // Linha 2
-    if (jC21.isSelected()) return "B1";
-    if (jC22.isSelected()) return "B2";
-    if (jC23.isSelected()) return "B3";
-    if (jC24.isSelected()) return "B4";
-    if (jC25.isSelected()) return "B5";
-    if (jC26.isSelected()) return "B6";
-
-    // Linha 3
-    if (jC31.isSelected()) return "C1";
-    if (jC32.isSelected()) return "C2";
-    if (jC33.isSelected()) return "C3";
-    if (jC34.isSelected()) return "C4";
-    if (jC35.isSelected()) return "C5";
-    if (jC36.isSelected()) return "C6";
-
-    // Linha 4
-    if (jC41.isSelected()) return "D1";
-    if (jC42.isSelected()) return "D2";
-    if (jC43.isSelected()) return "D3";
-    if (jC44.isSelected()) return "D4";
-    if (jC45.isSelected()) return "D5";
-    if (jC46.isSelected()) return "D6";
-
-    // Linha 5
-    if (jC51.isSelected()) return "E1";
-    if (jC52.isSelected()) return "E2";
-    if (jC53.isSelected()) return "E3";
-    if (jC54.isSelected()) return "E4";
-    if (jC55.isSelected()) return "E5";
-    if (jC56.isSelected()) return "E6";
-
-    // Linha 6
-    if (jC61.isSelected()) return "F1";
-    if (jC62.isSelected()) return "F2";
-    if (jC63.isSelected()) return "F3";
-    if (jC64.isSelected()) return "F4";
-    if (jC65.isSelected()) return "F5";
-    if (jC66.isSelected()) return "F6";
-
-    return null; // Se nada foi marcado
-}}
+    
+    public ArrayList<String> getPoltronasSelecionadas() {
+    ArrayList<String> selecionadas = new ArrayList<>();
+    
+    if (jC11.isSelected()) selecionadas.add("A1");
+    if (jC12.isSelected()) selecionadas.add("A2");
+    if (jC13.isSelected()) selecionadas.add("A3");
+    if (jC14.isSelected()) selecionadas.add("A4");
+    if (jC15.isSelected()) selecionadas.add("A5");
+    if (jC16.isSelected()) selecionadas.add("A6");
+    
+    if (jC21.isSelected()) selecionadas.add("B1");
+    if (jC22.isSelected()) selecionadas.add("B2");
+    if (jC23.isSelected()) selecionadas.add("B3");
+    if (jC24.isSelected()) selecionadas.add("B4");
+    if (jC25.isSelected()) selecionadas.add("B5");
+    if (jC26.isSelected()) selecionadas.add("B6");
+    
+    if (jC31.isSelected()) selecionadas.add("C1");
+    if (jC32.isSelected()) selecionadas.add("C2");
+    if (jC33.isSelected()) selecionadas.add("C3");
+    if (jC34.isSelected()) selecionadas.add("C4");
+    if (jC35.isSelected()) selecionadas.add("C5");
+    if (jC36.isSelected()) selecionadas.add("C6");
+    
+    if (jC41.isSelected()) selecionadas.add("D1");
+    if (jC42.isSelected()) selecionadas.add("D2");
+    if (jC43.isSelected()) selecionadas.add("D3");
+    if (jC44.isSelected()) selecionadas.add("D4");
+    if (jC45.isSelected()) selecionadas.add("D5");
+    if (jC46.isSelected()) selecionadas.add("D6");
+    
+    if (jC51.isSelected()) selecionadas.add("E1");
+    if (jC52.isSelected()) selecionadas.add("E2");
+    if (jC53.isSelected()) selecionadas.add("E3");
+    if (jC54.isSelected()) selecionadas.add("E4");
+    if (jC55.isSelected()) selecionadas.add("E5");
+    if (jC56.isSelected()) selecionadas.add("E6");
+    
+    if (jC61.isSelected()) selecionadas.add("F1");
+    if (jC62.isSelected()) selecionadas.add("F2");
+    if (jC63.isSelected()) selecionadas.add("F3");
+    if (jC64.isSelected()) selecionadas.add("F4");
+    if (jC65.isSelected()) selecionadas.add("F5");
+    if (jC66.isSelected()) selecionadas.add("F6");
+    
+    return selecionadas; // Retorna todas selecionadas
+    }
+}

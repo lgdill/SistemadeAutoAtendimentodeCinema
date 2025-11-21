@@ -8,12 +8,12 @@ package telas;
  *
  * @author Aluno
  */
-public class PoltronasInvA1 extends javax.swing.JFrame {
+public class PoltronasInvDA1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Tela_2
      */
-    public PoltronasInvA1() {
+    public PoltronasInvDA1() {
         initComponents();
         
             }
@@ -137,11 +137,6 @@ public class PoltronasInvA1 extends javax.swing.JFrame {
         jC41.setMargin(new java.awt.Insets(5, 5, 5, 5));
 
         jC44.setMargin(new java.awt.Insets(5, 5, 5, 5));
-        jC44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jC44ActionPerformed(evt);
-            }
-        });
 
         jC43.setMargin(new java.awt.Insets(5, 5, 5, 5));
 
@@ -420,10 +415,6 @@ public class PoltronasInvA1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jC11ActionPerformed
 
-    private void jC44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jC44ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jC44ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -441,14 +432,142 @@ public class PoltronasInvA1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PoltronasInvA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PoltronasInvDA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PoltronasInvA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PoltronasInvDA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PoltronasInvA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PoltronasInvDA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PoltronasInvA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PoltronasInvDA1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -581,7 +700,7 @@ public class PoltronasInvA1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PoltronasInvA1().setVisible(true);
+                new PoltronasInvDA1().setVisible(true);
             }
         });
     }
@@ -640,55 +759,4 @@ public class PoltronasInvA1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-    public String getPoltronaSelecionada() {
-
-    // Linha 1
-    if (jC11.isSelected()) return "A1";
-    if (jC12.isSelected()) return "A2";
-    if (jC13.isSelected()) return "A3";
-    if (jC14.isSelected()) return "A4";
-    if (jC15.isSelected()) return "A5";
-    if (jC16.isSelected()) return "A6";
-
-    // Linha 2
-    if (jC21.isSelected()) return "B1";
-    if (jC22.isSelected()) return "B2";
-    if (jC23.isSelected()) return "B3";
-    if (jC24.isSelected()) return "B4";
-    if (jC25.isSelected()) return "B5";
-    if (jC26.isSelected()) return "B6";
-
-    // Linha 3
-    if (jC31.isSelected()) return "C1";
-    if (jC32.isSelected()) return "C2";
-    if (jC33.isSelected()) return "C3";
-    if (jC34.isSelected()) return "C4";
-    if (jC35.isSelected()) return "C5";
-    if (jC36.isSelected()) return "C6";
-
-    // Linha 4
-    if (jC41.isSelected()) return "D1";
-    if (jC42.isSelected()) return "D2";
-    if (jC43.isSelected()) return "D3";
-    if (jC44.isSelected()) return "D4";
-    if (jC45.isSelected()) return "D5";
-    if (jC46.isSelected()) return "D6";
-
-    // Linha 5
-    if (jC51.isSelected()) return "E1";
-    if (jC52.isSelected()) return "E2";
-    if (jC53.isSelected()) return "E3";
-    if (jC54.isSelected()) return "E4";
-    if (jC55.isSelected()) return "E5";
-    if (jC56.isSelected()) return "E6";
-
-    // Linha 6
-    if (jC61.isSelected()) return "F1";
-    if (jC62.isSelected()) return "F2";
-    if (jC63.isSelected()) return "F3";
-    if (jC64.isSelected()) return "F4";
-    if (jC65.isSelected()) return "F5";
-    if (jC66.isSelected()) return "F6";
-
-    return null; // Se nada foi marcado
-}}
+}
